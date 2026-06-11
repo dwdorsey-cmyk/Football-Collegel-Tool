@@ -13,7 +13,6 @@
 
         body {
             font-family: 'Inter', -apple-system, sans-serif;
-            /* Updated background to use the provided image */
             background: url('Gemini_Generated_Image_h3kiiih3kiiih3ki.png') no-repeat center center fixed;
             background-size: cover;
             margin: 0;
@@ -25,7 +24,6 @@
         }
 
         .welcome-card {
-            /* Kept the white background so the text remains easy to read over the new background image */
             background: rgba(255, 255, 255, 0.95); 
             padding: 40px;
             border-radius: 16px;
@@ -36,10 +34,12 @@
             border-top: 6px solid var(--madison-green);
         }
 
+        /* This is the class that keeps the huge image in check */
         .hero-logo {
-            width: 120px;
+            width: 160px; /* Bumped up slightly since this logo is landscape format */
             height: auto;
             margin-bottom: 20px;
+            display: inline-block;
         }
 
         h1 {
@@ -86,7 +86,7 @@
 <body>
 
 <div class="welcome-card">
-    <img src="https://resources.finalsite.net/images/f_auto,q_auto/v1719002553/dallasisdorg/deadxy1dlos5tabu87lt/madisonloglandscape.jpg">
+    <img src="https://resources.finalsite.net/images/f_auto,q_auto/v1719002553/dallasisdorg/deadxy1dlos5tabu87lt/madisonloglandscape.jpg" alt="Madison Logo" class="hero-logo">
     
     <h1>Welcome to the Recruiting Hub</h1>
     <p>Access College Coaching Staffs, Social Media links, and College Camps</p>
